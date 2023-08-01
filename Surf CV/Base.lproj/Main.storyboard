@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Профиль-->
+        <!--Profile-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Surf_CV" customModuleProvider="target" sceneMemberID="viewController">
@@ -40,8 +40,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXB-ZV-CAy">
-                                                    <rect key="frame" x="300.33333333333331" y="8" width="47" height="35"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXB-ZV-CAy">
+                                                    <rect key="frame" x="300.33333333333331" y="8" width="47" height="34.333333333333336"/>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system"/>
                                                 </button>
@@ -50,6 +50,7 @@
                                                 <constraint firstItem="A5j-ub-mAA" firstAttribute="top" secondItem="qcf-OC-u2Q" secondAttribute="topMargin" constant="7" id="3ts-hR-Ila"/>
                                                 <constraint firstItem="cXB-ZV-CAy" firstAttribute="leading" secondItem="A5j-ub-mAA" secondAttribute="trailing" constant="251" id="DIe-ma-sKP"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="A5j-ub-mAA" secondAttribute="bottom" constant="6" id="Ngm-LJ-aBo"/>
+                                                <constraint firstItem="cXB-ZV-CAy" firstAttribute="firstBaseline" secondItem="A5j-ub-mAA" secondAttribute="firstBaseline" id="m6e-4o-Qwe"/>
                                                 <constraint firstItem="A5j-ub-mAA" firstAttribute="leading" secondItem="qcf-OC-u2Q" secondAttribute="leadingMargin" id="rB7-1q-xRI"/>
                                             </constraints>
                                             <connections>
@@ -74,7 +75,7 @@
                             <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="ysO-Qr-qnc">
                                 <rect key="frame" x="60" y="103" width="273" height="244"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Кузнецов Никита Сергеевич" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZX-MG-I1N">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kuznetsov Nikita Sergeevich" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZX-MG-I1N">
                                         <rect key="frame" x="22" y="134" width="228" height="70"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -119,7 +120,7 @@
                             <constraint firstAttribute="bottom" secondItem="wbd-Sy-UsC" secondAttribute="bottom" constant="33.670000000000002" id="vNU-mB-2wJ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Профиль" id="0pq-ZC-AVn"/>
+                    <navigationItem key="navigationItem" title="Profile" id="0pq-ZC-AVn"/>
                     <connections>
                         <outlet property="selfieView" destination="JTT-0c-xsd" id="KWg-fm-BaT"/>
                         <outlet property="skillCollectionView" destination="CMy-hh-DqS" id="iz1-g1-dOj"/>
