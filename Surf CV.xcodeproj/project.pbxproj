@@ -13,6 +13,9 @@
 		A07759682A78E9D100B878BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A07759662A78E9D100B878BC /* Main.storyboard */; };
 		A077596A2A78E9D300B878BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A07759692A78E9D300B878BC /* Assets.xcassets */; };
 		A077596D2A78E9D300B878BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A077596B2A78E9D300B878BC /* LaunchScreen.storyboard */; };
+		A07759762A78FC6A00B878BC /* skillCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07759742A78FC6A00B878BC /* skillCell.swift */; };
+		A07759772A78FC6A00B878BC /* skillCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A07759752A78FC6A00B878BC /* skillCell.xib */; };
+		A077597A2A7901E700B878BC /* Skill data.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07759792A7901E700B878BC /* Skill data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		A07759692A78E9D300B878BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A077596C2A78E9D300B878BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A077596E2A78E9D300B878BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A07759742A78FC6A00B878BC /* skillCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = skillCell.swift; sourceTree = "<group>"; };
+		A07759752A78FC6A00B878BC /* skillCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = skillCell.xib; sourceTree = "<group>"; };
+		A07759792A7901E700B878BC /* Skill data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Skill data.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +66,30 @@
 				A07759622A78E9D100B878BC /* SceneDelegate.swift */,
 				A07759642A78E9D100B878BC /* ViewController.swift */,
 				A07759662A78E9D100B878BC /* Main.storyboard */,
+				A077597B2A7901EF00B878BC /* Module */,
+				A07759782A7901BD00B878BC /* Skill cell */,
 				A07759692A78E9D300B878BC /* Assets.xcassets */,
 				A077596B2A78E9D300B878BC /* LaunchScreen.storyboard */,
 				A077596E2A78E9D300B878BC /* Info.plist */,
 			);
 			path = "Surf CV";
+			sourceTree = "<group>";
+		};
+		A07759782A7901BD00B878BC /* Skill cell */ = {
+			isa = PBXGroup;
+			children = (
+				A07759742A78FC6A00B878BC /* skillCell.swift */,
+				A07759752A78FC6A00B878BC /* skillCell.xib */,
+			);
+			path = "Skill cell";
+			sourceTree = "<group>";
+		};
+		A077597B2A7901EF00B878BC /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				A07759792A7901E700B878BC /* Skill data.swift */,
+			);
+			path = Module;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A077596D2A78E9D300B878BC /* LaunchScreen.storyboard in Resources */,
+				A07759772A78FC6A00B878BC /* skillCell.xib in Resources */,
 				A077596A2A78E9D300B878BC /* Assets.xcassets in Resources */,
 				A07759682A78E9D100B878BC /* Main.storyboard in Resources */,
 			);
@@ -139,6 +165,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A07759652A78E9D100B878BC /* ViewController.swift in Sources */,
+				A07759762A78FC6A00B878BC /* skillCell.swift in Sources */,
+				A077597A2A7901E700B878BC /* Skill data.swift in Sources */,
 				A07759612A78E9D100B878BC /* AppDelegate.swift in Sources */,
 				A07759632A78E9D100B878BC /* SceneDelegate.swift in Sources */,
 			);
@@ -293,8 +321,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +331,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Meaw.Surf-CV";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,8 +353,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +363,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Meaw.Surf-CV";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
