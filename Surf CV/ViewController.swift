@@ -13,13 +13,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var skillCollectionView: UICollectionView!
     
     let cellID = "skillCell"
-    
-    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        selfieView.layer.cornerRadius = selfieView.frame.size.width / 2
-        setupCell()
+//        selfieView.layer.cornerRadius = selfieView.frame.size.width / 2
+//        setupCell()
     }
 
 
@@ -32,8 +31,9 @@ func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection s
 }
 
 func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-    let cell = skillCollectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath)
-    let cellData = dataCell[indexPath.row]
+    let cell = skillCollectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath) as! skillCell
+    cell.skillName.text = dataCell[indexPath.row].skillName
+    
     
     return cell
 }
@@ -44,3 +44,4 @@ func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath:
         skillCollectionView.register(UINib(nibName: cellID, bundle: nil), forCellWithReuseIdentifier: cellID)
     }
 }
+
