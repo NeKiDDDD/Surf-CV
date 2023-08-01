@@ -21,6 +21,6 @@ struct cellData {
 let one = cellData(skillName: "MVC")
 let two = cellData(skillName: "Git")
 let three = cellData(skillName: "Swift")
-let four = cellData(skillName: "Autolayout")
+let four = cellData(skillName: "CocoaPods")
 let five = cellData(skillName: "OOP and SOLID")
 

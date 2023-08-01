@@ -16,6 +16,7 @@
 		A07759762A78FC6A00B878BC /* skillCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07759742A78FC6A00B878BC /* skillCell.swift */; };
 		A07759772A78FC6A00B878BC /* skillCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A07759752A78FC6A00B878BC /* skillCell.xib */; };
 		A077597A2A7901E700B878BC /* Skill data.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07759792A7901E700B878BC /* Skill data.swift */; };
+		A09561912A79539E00E83273 /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09561902A79539E00E83273 /* HeaderCollectionReusableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		A07759742A78FC6A00B878BC /* skillCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = skillCell.swift; sourceTree = "<group>"; };
 		A07759752A78FC6A00B878BC /* skillCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = skillCell.xib; sourceTree = "<group>"; };
 		A07759792A7901E700B878BC /* Skill data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Skill data.swift"; sourceTree = "<group>"; };
+		A09561902A79539E00E83273 /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				A07759622A78E9D100B878BC /* SceneDelegate.swift */,
 				A07759642A78E9D100B878BC /* ViewController.swift */,
 				A07759662A78E9D100B878BC /* Main.storyboard */,
+				A09561902A79539E00E83273 /* HeaderCollectionReusableView.swift */,
 				A077597B2A7901EF00B878BC /* Module */,
 				A07759782A7901BD00B878BC /* Skill cell */,
 				A07759692A78E9D300B878BC /* Assets.xcassets */,
@@ -168,6 +171,7 @@
 				A07759762A78FC6A00B878BC /* skillCell.swift in Sources */,
 				A077597A2A7901E700B878BC /* Skill data.swift in Sources */,
 				A07759612A78E9D100B878BC /* AppDelegate.swift in Sources */,
+				A09561912A79539E00E83273 /* HeaderCollectionReusableView.swift in Sources */,
 				A07759632A78E9D100B878BC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
