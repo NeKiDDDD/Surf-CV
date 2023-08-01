@@ -7,20 +7,10 @@
 
 import Foundation
 
-let dataCell = [
-one,
-two,
-three,
-four,
-five]
-
 struct cellData {
     let skillName: String
 }
 
-let one = cellData(skillName: "MVC")
-let two = cellData(skillName: "Git")
-let three = cellData(skillName: "Swift")
-let four = cellData(skillName: "CocoaPods")
-let five = cellData(skillName: "OOP and SOLID")
+
+
 

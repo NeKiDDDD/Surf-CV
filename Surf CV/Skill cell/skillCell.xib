@@ -29,6 +29,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="close" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OkL-Jl-WGm">
                                 <rect key="frame" x="100.66666666666667" y="15" width="41.333333333333329" height="20"/>
                                 <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <action selector="deleteAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="jQo-nB-014"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
